@@ -1,0 +1,154 @@
+html, body {
+    height:100%;
+}
+
+body {
+    background-image: url(../images/background.jpg);
+}
+
+.container-fluid {
+    height: 100%;
+    position: relative;
+}
+
+#header-row {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+#mainDisplay {
+    width: 100%;
+    position: absolute;               
+    top: 50%;                         
+    transform: translate(0, -38%);
+} 
+
+#footer {
+    background-color: dimgray;
+    border-top-style: solid;
+    border-color: red;
+    border-width: medium;
+    color: white;
+    text-align: center;
+}
+
+#contact-box{
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-color: red;
+    border-width: medium;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#footer-text {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+#nav-column {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.dropdown-menu {
+    background-color: red;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-link {
+    color:white !important;
+}
+
+.dropdown-item {
+    color:white !important;
+}
+
+.nav-page {
+    border-right: solid;    
+    border-color: white;
+    border-width: medium;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+
+.navbar {
+    border-style: solid;
+    border-color: dimgray;
+    border-width: medium;
+}
+
+#about-me-link {
+    padding-right: 15px !important;
+    border-right: solid;    
+    border-color: white;
+    border-width: medium;
+}
+
+#connect-link {
+    padding-left: 15px !important;
+}
+
+.drop-link {
+    border-bottom-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding-left: 0px;
+}
+
+#about-me-box {
+    background-color: dimgray;
+    color:white;
+    border-style: solid;
+    border-color:red;
+    border-width:thick;
+    padding-bottom: 20px;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+#about-me-header {
+    text-align: center;
+    margin-bottom: 10px
+}
+
+#brand-statement {
+    border-left: solid;
+    border-color:white;
+    border-width: thick;
+    margin-bottom: 20px;
+}
+
+#pic-col {
+    text-align: center;
+}
+
+img {
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 767px){
+    #mainDisplay {                      
+        transform: translate(0, -32%);
+    } 
+
+    #brand-statement {
+        padding-top: 10px;
+        border-left: none;
+        border-top: solid;
+        border-color:white;
+        border-width: thick;
+    }
+
+    #about-me-box{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
