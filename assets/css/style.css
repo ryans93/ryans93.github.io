@@ -9,6 +9,8 @@ body {
 .container-fluid {
     height: 100%;
     position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #header-row {
@@ -30,6 +32,10 @@ body {
     border-width: medium;
     color: white;
     text-align: center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 #contact-box{
@@ -145,10 +151,29 @@ img {
         border-top: solid;
         border-color:white;
         border-width: thick;
+        margin-bottom: 0px;
     }
 
     #about-me-box{
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .nav-page {
+        border-right: none;
+        border-bottom: solid;    
+        border-color: white;
+        border-width: medium;
+    }
+
+    #about-me-link {
+        border-right: none;
+        border-bottom: solid;    
+        border-color: white;
+        border-width: medium;
+    }
+
+    .nav-item {
+        padding-right: 50%;
     }
 }

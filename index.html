@@ -18,7 +18,7 @@
             <div class="col-12" id="nav-column">
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: red;">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" data-state="collapsed">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -58,8 +58,8 @@
         </div>
 
         <div class="row" id="header-row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4" id="contact-box">
+            <div class="col-lg-4 col-md-3"></div>
+            <div class="col-lg-4 col-md-6" id="contact-box">
                 <h4>Ryan Strickler</h4>
                 <h6>Email: <a style="color: white;"
                         href="mailto:ryan.strickler.1993@gmail.com">ryan.strickler.1993@gmail.com</a></h6>
@@ -72,10 +72,10 @@
             <div class="col-md-10 col-12" id="about-me-box">
                 <h3 id="about-me-header">About Me</h3>
                 <div class="row">
-                    <div class="col-md-6 col-12" id="pic-col">
+                    <div class="col-xl-5 col-md-6 col-12" id="pic-col">
                         <img src="./assets/images/Image-Coming-Soon.png" alt="Profile Picture" height="314" width="314">
                     </div>
-                    <div class="col-md-6 col-12" id="brand-statement">
+                    <div class="col-xl-7 col-md-6 col-12" id="brand-statement">
                         <p>
                             Web Developer with Computer Science background. Earned an
                             Associate’s degree in Computer
@@ -93,7 +93,7 @@
             </div>
         </div>
 
-        <div class="row fixed-bottom" id="footer">
+        <div class="row" id="footer">
             <div class="col-md-12">
                 <h6 id="footer-text">© Copyright 2020 Ryan Strickler</h6>
             </div>
@@ -109,5 +109,24 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+        <script>
+            $(".navbar-toggler").on("click", function (){
+                if ($(this).attr("data-state") === "collapsed"){
+                    $(this).attr("data-state", "expanded");
+                    $(".container-fluid").css("height", "150%");
+                    $("#mainDisplay").css("transform", "translate(0, -17%)");
+                    $("#about-me-box").css("max-height", "70vh");
+                }
+                else{
+                    $(this).attr("data-state", "collapsed");
+                    $(".container-fluid").css("height", "67%");
+                    $(".container-fluid").css("height", "100%");
+                    $("#mainDisplay").css("transform", "translate(0, -32%)");
+                    $("#about-me-box").css("max-height", "50vh");
+                }
+            })
+        </script>
 </body>
+
 </html>
