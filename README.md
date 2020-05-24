@@ -41,7 +41,7 @@ Features:
 - Generates critical values such as Insulin:Carb ratio based off of user’s weight and activity level
 - Calculates insulin doses and timing for meals, as well as calculate active insulin
 - Records blood sugar readings as well as showing averages for ranges between 7-180 days
-- Allows users to create and edit meals, saving key data such as carbohydrate content
+- Allows users to create and edit meals, saving key data such as carbohydrate content  
 [Github](https://github.com/ryans93/Blood-Sugar-App)  
 [Live Demo](https://ryans93.github.io/Blood-Sugar-App/)
 
@@ -54,7 +54,7 @@ Features:
 - Calculates insulin dosages for meals as well as active insulin
 - Calculates basal insulin dosages and basal insulin rates for pump users
 - Allows user to edit and customize various settings such as target blood sugar
-- Warns user if high or low blood sugar is detected
+- Warns user if high or low blood sugar is detected  
 [Github](https://github.com/ryans93/Diabetes-App)  
 [Live Demo](https://ryan-strickler-diabetes-app.herokuapp.com/)
 
@@ -66,7 +66,7 @@ Features:
 - Allow users to create accounts or login to an existing account
 - Users can save different types of loans to their account
 - Allows user to input an available amount to pay each month
-- Calculates an optimal method for user to pay off debt as efficiently as possible
+- Calculates an optimal method for user to pay off debt as efficiently as possible  
 [Github](https://github.com/ryans93/Dept-Optimizer)  
 [Live Demo](https://ryan-strickler-debt-optimizer.herokuapp.com/)
 
