@@ -15,9 +15,9 @@ Web Developer with Associate’s degree in Computer Science. Earned certificate 
 ## Education
 
 ### Associates Degree
-Valencia College, Orlando, FL
-Major in Computer Science
-Graduated as a member of Phi Theta Kappa
+Valencia College, Orlando, FL  
+Major in Computer Science  
+Graduated as a member of Phi Theta Kappa  
 
 ### Full-Stack Web Development Certificate
 University of Central Florida, Orlando, FL
