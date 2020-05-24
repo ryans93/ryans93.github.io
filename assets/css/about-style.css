@@ -141,8 +141,13 @@ img {
 }
 
 @media screen and (max-width: 767px){
+    
+    .container-fluid {
+        height: 115%
+    }
+    
     #mainDisplay {                      
-        transform: translate(0, -32%);
+        transform: translate(0, -37%);
     } 
 
     #brand-statement {
@@ -157,6 +162,7 @@ img {
     #about-me-box{
         padding-left: 30px;
         padding-right: 30px;
+        max-height: 66vh;
     }
 
     .nav-page {
