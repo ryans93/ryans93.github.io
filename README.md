@@ -2,7 +2,8 @@
 
 ## Contact Information
 
-ryan.strickler.1993@gmail.com | 352-459-5396 | Orlando, Florida 
+Email: ryan.strickler.1993@gmail.com 
+Phone: (352) 459-5396
 [LinkedIn](www.linkedin.com/in/ryan-strickler)
 [Github](https://github.com/ryans93)
 [Portfolio](https://ryans93.github.io/)
