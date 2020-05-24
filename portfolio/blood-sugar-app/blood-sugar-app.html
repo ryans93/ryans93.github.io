@@ -59,7 +59,7 @@
                                         target="_blank">Github</a>
                                     <a class="dropdown-item drop-link" href="https://my.indeed.com/p/ryans-591ozb3"
                                         target="_blank">Indeed</a>
-                                    <a class="dropdown-item" style="padding-left: 0px;"
+                                    <a class="dropdown-item drop-link" style="padding-left: 0px; border-style: none;"
                                         href="https://angel.co/u/ryan-strickler" target="_blank">AngelList</a>
                                 </div>
                             </li>
@@ -227,6 +227,13 @@
                     $("#mainDisplay").css("transform", "translate(0, -30%)");
                 }
             }
+        });
+
+        $(".drop-link").on("click", function () {
+            $("#connect-link").attr("data-state", "collapsed");
+            $(".container-fluid").css("height", "67%");
+            $(".container-fluid").css("height", "130%");
+            $("#mainDisplay").css("transform", "translate(0, -30%)");
         });
     </script>
 </body>

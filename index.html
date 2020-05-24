@@ -174,6 +174,13 @@
                 }
             }
         });
+
+        $(".drop-link").on("click", function () {
+            $("#connect-link").attr("data-state", "collapsed");
+            $(".container-fluid").css("height", "67%");
+            $(".container-fluid").css("height", "145%");
+            $("#mainDisplay").css("transform", "translate(0, -14%)");
+        });
     </script>
 </body>
 
