@@ -11,6 +11,10 @@ ul {
     margin-left: 25px;
 }
 
+.navbar-nav {
+    margin-left: 0px;
+}
+
 .container-fluid {
     height: 100%;
     position: relative;
@@ -165,6 +169,7 @@ img {
         border-bottom: solid;    
         border-color: white;
         border-width: medium;
+        padding-left: 15px !important;
     }
 
     .nav-item {

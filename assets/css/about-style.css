@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
     border-right: solid;    
     border-color: white;
     border-width: medium;
+    font-weight: bold;
 }
 
 #connect-link {
@@ -163,6 +164,7 @@ img {
         border-bottom: solid;    
         border-color: white;
         border-width: medium;
+        padding-left: 15px !important;
     }
 
     .nav-item {
