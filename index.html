@@ -13,6 +13,7 @@
 
 <body>
     <div class="container-fluid">
+
         <div class="row" id="nav-row">
             <div class="col-12" id="nav-column">
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: red;">
@@ -176,10 +177,12 @@
         });
 
         $(".drop-link").on("click", function () {
+            if ($(window).width() <= 767) {
             $("#connect-link").attr("data-state", "collapsed");
             $(".container-fluid").css("height", "67%");
             $(".container-fluid").css("height", "145%");
             $("#mainDisplay").css("transform", "translate(0, -14%)");
+            }
         });
     </script>
 </body>

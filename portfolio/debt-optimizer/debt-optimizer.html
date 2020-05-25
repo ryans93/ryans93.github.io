@@ -202,10 +202,12 @@
         });
 
         $(".drop-link").on("click", function () {
+            if ($(window).width() <= 767) {
             $("#connect-link").attr("data-state", "collapsed");
             $(".container-fluid").css("height", "67%");
             $(".container-fluid").css("height", "130%");
             $("#mainDisplay").css("transform", "translate(0, -30%)");
+            }
         });
     </script>
 </body>
