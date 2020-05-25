@@ -14,15 +14,12 @@ body {
 }
 
 #header-row {
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    margin-top: 20px;
 }
 
 #mainDisplay {
     width: 100%;
-    position: absolute;               
-    top: 50%;                         
-    transform: translate(0, -38%);
+    position: absolute;
 } 
 
 #footer {
@@ -53,8 +50,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer-text {
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 #nav-column {
@@ -116,8 +113,6 @@ h1, h2, h3, h4, h5, h6 {
     border-color:red;
     border-width:thick;
     padding-bottom: 20px;
-    max-height: 50vh;
-    overflow-y: auto;
 }
 
 #about-me-header {
@@ -142,14 +137,6 @@ img {
 
 @media screen and (max-width: 767px){
     
-    .container-fluid {
-        height: 115%
-    }
-    
-    #mainDisplay {                      
-        transform: translate(0, -37%);
-    } 
-
     #brand-statement {
         padding-top: 10px;
         border-left: none;
@@ -162,7 +149,6 @@ img {
     #about-me-box{
         padding-left: 30px;
         padding-right: 30px;
-        max-height: 66vh;
     }
 
     .nav-page {

@@ -19,15 +19,12 @@ ul {
 }
 
 #header-row {
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    margin-top: 20px;
 }
 
 #mainDisplay {
     width: 100%;
     position: absolute;               
-    top: 50%;                         
-    transform: translate(0, -52%);
 } 
 
 #footer {
@@ -58,8 +55,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer-text {
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 #nav-column {
@@ -121,8 +118,6 @@ h1, h2, h3, h4, h5, h6 {
     border-color:red;
     border-width:thick;
     padding-bottom: 20px;
-    max-height: 70vh;
-    overflow-y: auto;
 }
 
 #about-me-header {
@@ -142,23 +137,7 @@ img {
     padding-bottom: 20px;
 }
 
-.github-btn{
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-}
-
-.demo-btn{
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-}
-
-
 @media screen and (max-width: 767px){
-    #mainDisplay {                      
-        transform: translate(0, -51%);
-    } 
 
     #pic-col {
         padding-top: 10px;

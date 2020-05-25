@@ -18,8 +18,7 @@
             <div class="col-12" id="nav-column">
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: red;">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
-                        data-state="collapsed">
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -30,7 +29,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link nav-page dropdown-toggle" id="portfolio-dropdown"
-                                    data-state="collapsed" href="#" id="navbarDropdownMenuLink" role="button"
+                                    href="#" id="navbarDropdownMenuLink" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Portfolio
                                 </a>
@@ -48,7 +47,7 @@
                                     target="_blank">Resume</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="connect-link" data-state="collapsed" href="#"
+                                <a class="nav-link dropdown-toggle" id="connect-link" href="#"
                                     id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                     Connect
@@ -124,65 +123,68 @@
         crossorigin="anonymous"></script>
 
     <script>
-        $(".navbar-toggler").on("click", function () {
-            if ($(window).width() <= 767) {
-                if ($(this).attr("data-state") === "collapsed") {
-                    $(this).attr("data-state", "expanded");
-                    $(".container-fluid").css("height", "145%");
-                    $("#mainDisplay").css("transform", "translate(0, -14%)");
+
+        $(document).ready(function () {
+
+            setContainerHeight();
+
+            $(window).on('resize', function () {
+                setContainerHeight();
+            });
+
+            function setContainerHeight() {
+                var navHeight = $("#nav-row").height();
+                var headerHeight = $("#header-row").height();
+                var mainHeight = $("#mainDisplay").height();
+                var footerHeight = $("#footer").height();
+                var totalHeight = navHeight + headerHeight + mainHeight + footerHeight + 23;
+                console.log("total height: " + totalHeight);
+                if ($(".container-fluid").height() < totalHeight + 40) {
+                    $(".container-fluid").css("height", (totalHeight + 40) + "px");
                 }
                 else {
-                    $(this).attr("data-state", "collapsed");
-                    $("#connect-link").attr("data-state", "collapsed");
-                    $("#portfolio-dropdown").attr("data-state", "collapsed");
-                    $(".container-fluid").css("height", "67%");
-                    $(".container-fluid").css("height", "115%");
-                    $("#mainDisplay").css("transform", "translate(0, -37%)");
+                    $(".container-fluid").css("height", "100%");
+                    if ($(".container-fluid").height() < totalHeight + 40) {
+                        $(".container-fluid").css("height", (totalHeight + 40) + "px");
+                    }
                 }
+                console.log("container height " + $(".container-fluid").height());
+                setMarginHeight();
             }
-        });
 
-        $("#portfolio-dropdown").on("click", function () {
-            if ($(window).width() <= 767) {
-                if ($(this).attr("data-state") === "collapsed") {
-                    $(this).attr("data-state", "expanded");
-                    $("#connect-link").attr("data-state", "collapsed");
-                    $(".container-fluid").css("height", "165%");
-                    $("#mainDisplay").css("transform", "translate(0, 1%)");
-                }
-                else {
-                    $(this).attr("data-state", "collapsed");
-                    $(".container-fluid").css("height", "67%");
-                    $(".container-fluid").css("height", "145%");
-                    $("#mainDisplay").css("transform", "translate(0, -14%)");
-                }
+            function setMarginHeight() {
+                var navHeight = $("#nav-row").height();
+                var headerHeight = $("#header-row").height();
+                var mainHeight = $("#mainDisplay").height();
+                var footerHeight = $("#footer").height();
+                var totalHeight = navHeight + headerHeight + mainHeight + footerHeight + 23;
+                var marginHeight = ($(".container-fluid").height() - totalHeight) / 2;
+                $("#mainDisplay").css("margin-top", marginHeight + "px");
             }
-        });
 
-        $("#connect-link").on("click", function () {
-            if ($(window).width() <= 767) {
-                if ($(this).attr("data-state") === "collapsed") {
-                    $(this).attr("data-state", "expanded");
-                    $("#portfolio-dropdown").attr("data-state", "collapsed");
-                    $(".container-fluid").css("height", "170%");
-                    $("#mainDisplay").css("transform", "translate(0, 6%)");
+            $(".navbar-toggler").on("click", function () {
+                if ($(window).width() <= 767) {
+                    setTimeout(() => {
+                        setContainerHeight();
+                    }, 400);
                 }
-                else {
-                    $(this).attr("data-state", "collapsed");
-                    $(".container-fluid").css("height", "67%");
-                    $(".container-fluid").css("height", "145%");
-                    $("#mainDisplay").css("transform", "translate(0, -14%)");
-                }
-            }
-        });
+            });
 
-        $(".drop-link").on("click", function () {
-            if ($(window).width() <= 767) {
-            $("#connect-link").attr("data-state", "collapsed");
-            $(".container-fluid").css("height", "67%");
-            $(".container-fluid").css("height", "145%");
-            $("#mainDisplay").css("transform", "translate(0, -14%)");
-            }
+            $(".dropdown-toggle").on("click", function () {
+                if ($(window).width() <= 767) {
+                    setTimeout(() => {
+                        setContainerHeight();
+                    }, 400);
+                }
+            });
+
+            $(".drop-link").on("click", function () {
+                if ($(window).width() <= 767) {
+                    setTimeout(() => {
+                        setContainerHeight();
+                    }, 400);
+                }
+            });
         });
     </script>
 </body>

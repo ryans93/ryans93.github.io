@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../../assets/css/portfolio-style.css">
     <title>Debt Optimizer</title>
 </head>
+
 <body>
     <div class="container-fluid">
 
@@ -16,8 +18,7 @@
             <div class="col-12" id="nav-column">
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: red;">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
-                        data-state="collapsed">
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -27,8 +28,9 @@
                                         class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item active dropdown">
-                                <a class="nav-link nav-page dropdown-toggle" id="portfolio-dropdown" data-state="collapsed" href="#" id="navbarDropdownMenuLink"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link nav-page dropdown-toggle" id="portfolio-dropdown"
+                                    href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Portfolio
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -45,7 +47,7 @@
                                     target="_blank">Resume</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="connect-link" data-state="collapsed" href="#"
+                                <a class="nav-link dropdown-toggle" id="connect-link" href="#"
                                     id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                     Connect
@@ -81,10 +83,8 @@
                         </ul>
                         <h4>Links</h4>
                         <ul>
-                            <li><a href="" style="color:white;"
-                                    target="_blank"><u>Live Demo</u></a></li>
-                            <li><a href="" style="color:white;"
-                                    target="_blank"><u>Github</u></a></li>
+                            <li><a href="" style="color:white;" target="_blank"><u>Live Demo</u></a></li>
+                            <li><a href="" style="color:white;" target="_blank"><u>Github</u></a></li>
 
                         </ul>
                     </div>
@@ -100,20 +100,20 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="./screenshots/Image-Coming-Soon.png" height="400" width="400"
-                                        alt="First slide">
+                                    <img class="d-block w-100" src="./screenshots/Image-Coming-Soon.png" height="400"
+                                        width="400" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="./screenshots/Image-Coming-Soon.png" height="400" width="400"
-                                        alt="Second slide">
+                                    <img class="d-block w-100" src="./screenshots/Image-Coming-Soon.png" height="400"
+                                        width="400" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="./screenshots/Image-Coming-Soon.png" height="400" width="400"
-                                        alt="Third slide">
+                                    <img class="d-block w-100" src="./screenshots/Image-Coming-Soon.png" height="400"
+                                        width="400" alt="Third slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="./screenshots/Image-Coming-Soon.png" height="400" width="400"
-                                        alt="Fourth slide">
+                                    <img class="d-block w-100" src="./screenshots/Image-Coming-Soon.png" height="400"
+                                        width="400" alt="Fourth slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
@@ -149,66 +149,67 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script>
-        $(".navbar-toggler").on("click", function () {
-            if ($(window).width() <= 767) {
-                if ($(this).attr("data-state") === "collapsed") {
-                    $(this).attr("data-state", "expanded");
-                    $(".container-fluid").css("height", "130%");
-                    $("#mainDisplay").css("transform", "translate(0, -30%)");
+        $(document).ready(function () {
+
+            setContainerHeight();
+
+            $(window).on('resize', function () {
+                setContainerHeight();
+            });
+
+            function setContainerHeight() {
+                var navHeight = $("#nav-row").height();
+                var mainHeight = $("#mainDisplay").height();
+                var footerHeight = $("#footer").height();
+                var totalHeight = navHeight + mainHeight + footerHeight + 3;
+                console.log("total height: " + totalHeight);
+                if ($(".container-fluid").height() < totalHeight + 40) {
+                    $(".container-fluid").css("height", (totalHeight + 40) + "px");
                 }
                 else {
-                    $(this).attr("data-state", "collapsed");
-                    $("#connect-link").attr("data-state", "collapsed");
-                    $("#portfolio-dropdown").attr("data-state", "collapsed");
-                    $(".container-fluid").css("height", "67%");
                     $(".container-fluid").css("height", "100%");
-                    $("#mainDisplay").css("transform", "translate(0, -51%)");
+                    if ($(".container-fluid").height() < totalHeight + 40) {
+                        $(".container-fluid").css("height", (totalHeight + 40) + "px");
+                    }
                 }
+                console.log("container height " + $(".container-fluid").height());
+                setMarginHeight();
             }
-        });
 
-        $("#portfolio-dropdown").on("click", function () {
-            if ($(window).width() <= 767) {
-                if ($(this).attr("data-state") === "collapsed") {
-                    $(this).attr("data-state", "expanded");
-                    $("#connect-link").attr("data-state", "collapsed");
-                    $(".container-fluid").css("height", "150%");
-                    $("#mainDisplay").css("transform", "translate(0, -15%)");
-                }
-                else {
-                    $(this).attr("data-state", "collapsed");
-                    $(".container-fluid").css("height", "67%");
-                    $(".container-fluid").css("height", "130%");
-                    $("#mainDisplay").css("transform", "translate(0, -30%)");
-                }
+            function setMarginHeight() {
+                var navHeight = $("#nav-row").height();
+                var mainHeight = $("#mainDisplay").height();
+                var footerHeight = $("#footer").height();
+                var totalHeight = navHeight  + mainHeight + footerHeight + 3;
+                var marginHeight = ($(".container-fluid").height() - totalHeight) / 2;
+                $("#mainDisplay").css("margin-top", marginHeight + "px");
             }
-        });
 
-        $("#connect-link").on("click", function () {
-            if ($(window).width() <= 767) {
-                if ($(this).attr("data-state") === "collapsed") {
-                    $(this).attr("data-state", "expanded");
-                    $("#portfolio-dropdown").attr("data-state", "collapsed");
-                    $(".container-fluid").css("height", "155%");
-                    $("#mainDisplay").css("transform", "translate(0, -10%)");
+            $(".navbar-toggler").on("click", function () {
+                if ($(window).width() <= 767) {
+                    setTimeout(() => {
+                        setContainerHeight();
+                    }, 400);
                 }
-                else {
-                    $(this).attr("data-state", "collapsed");
-                    $(".container-fluid").css("height", "67%");
-                    $(".container-fluid").css("height", "130%");
-                    $("#mainDisplay").css("transform", "translate(0, -30%)");
-                }
-            }
-        });
+            });
 
-        $(".drop-link").on("click", function () {
-            if ($(window).width() <= 767) {
-            $("#connect-link").attr("data-state", "collapsed");
-            $(".container-fluid").css("height", "67%");
-            $(".container-fluid").css("height", "130%");
-            $("#mainDisplay").css("transform", "translate(0, -30%)");
-            }
+            $(".dropdown-toggle").on("click", function () {
+                if ($(window).width() <= 767) {
+                    setTimeout(() => {
+                        setContainerHeight();
+                    }, 400);
+                }
+            });
+
+            $(".drop-link").on("click", function () {
+                if ($(window).width() <= 767) {
+                    setTimeout(() => {
+                        setContainerHeight();
+                    }, 400);
+                }
+            });
         });
     </script>
 </body>
+
 </html>
