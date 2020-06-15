@@ -133,7 +133,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border: medium solid white;
 }
 
 @media screen and (max-width: 767px){
