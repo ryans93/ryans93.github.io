@@ -1,5 +1,7 @@
 # Ryan Strickler
 
+![Profile Picture](./assets/images/Ryan.Strickler_7410_square.jpg)
+
 ## Contact Information
 
 Email: ryan.strickler.1993@gmail.com  
@@ -9,8 +11,6 @@ Phone: (352) 459-5396
 [Portfolio](https://ryans93.github.io/)
 
 ## Summary
-
-![Profile Picture](./assets/images/Ryan.Strickler_7410_square.jpg)
 
 Web Developer with Associate’s degree in Computer Science. Earned certificate in Full-Stack Web Development through the University of Central Florida. Worked as an intern at Lockheed Martin for one year. Experience developing applications both individually, as well as in an Agile/Scrum environment. Methodical problem solver and eager to learn new skills.
 
