@@ -8,8 +8,8 @@ function Header() {
                 <h1 className="text-4xl font-extrabold py-[1rem]">Ryan Strickler</h1>
                 <h3 className="text-2xl font-bold">Full Stack Web Developer</h3>
                 <h5 className="flex w-full lg:flex-row lg:justify-evenly flex-col items-center py-[1rem] underline">
-                    <a className="font-xl font-bold " href="mailto:ryan.strickler.1993@gmail.com">Email: ryan.strickler.1993@gmail.com</a>
-                    <a className="font-xl font-bold " href="tel:+13524595396">Phone: (352)-459-5396</a>
+                    <a className="text-xl font-bold " href="mailto:ryan.strickler.1993@gmail.com">Email: ryan.strickler.1993@gmail.com</a>
+                    <a className="text-xl font-bold " href="tel:+13524595396">Phone: (352)-459-5396</a>
                 </h5>
                 <div id="imageContainer" className="flex flex-row justify-center">
                     <a href="https://www.linkedin.com/in/ryan-strickler/" target="__blank"><img src="../src/assets/icons/icons8-github-ios-17-glyph/icons8-github-60.png" alt="Github Icon" className="px-[1rem]"/></a>
