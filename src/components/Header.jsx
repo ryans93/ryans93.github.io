@@ -1,3 +1,6 @@
+import gitIcon from "../assets/icons/icons8-github-ios-17-glyph/icons8-github-60.png"
+import lnIcon from "../assets/icons/icons8-linkedin-ios-17-glyph/icons8-linkedin-60.png"
+
 function Header() {
     return (
         <section id="header" className="bg-red-700/50 text-white flex w-[85%] grow-0 flex md:flex-row flex-col h-fit p-[2rem] my-[3rem] border-white-500 border-3">
@@ -12,8 +15,8 @@ function Header() {
                     <a className="text-xl font-bold " href="tel:+13524595396">Phone: (352)-459-5396</a>
                 </h5>
                 <div id="imageContainer" className="flex flex-row justify-center">
-                    <a href="https://www.linkedin.com/in/ryan-strickler/" target="__blank"><img src="../src/assets/icons/icons8-github-ios-17-glyph/icons8-github-60.png" alt="Github Icon" className="px-[1rem]"/></a>
-                    <a href="https://github.com/ryans93" target="__blank"><img src="../src/assets/icons/icons8-linkedin-ios-17-glyph/icons8-linkedin-60.png" alt="LinkedIn Icon" /></a>
+                    <a href="https://www.linkedin.com/in/ryan-strickler/" target="__blank"><img src={gitIcon} alt="Github Icon" className="px-[1rem]"/></a>
+                    <a href="https://github.com/ryans93" target="__blank"><img src={lnIcon} alt="LinkedIn Icon" /></a>
                 </div>
             </div>
         </section>

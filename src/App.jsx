@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <main className="bg-[url(background.jpg)] overflow-auto flex flex-1 flex-col flex-nowrap items-center">
+      <main className="bg-[url(/background.jpg)] overflow-auto flex flex-1 flex-col flex-nowrap items-center">
         <Header/>
         <About/>
         <Portfolio/>
