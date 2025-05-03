@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import resume from "../assets/resume/RyanStricklerResume.pdf"
 
 function About() {
 
@@ -83,7 +84,7 @@ function About() {
 
         if (content === "resume"){
             return (
-            <embed src="../src/assets/resume/RyanStricklerResume.pdf" type="application/pdf" width="100%" className="h-[calc(98vh-4rem)]" />
+            <embed src={resume} type="application/pdf" width="100%" className="h-[calc(98vh-4rem)]" />
             )
         }
     }
