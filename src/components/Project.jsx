@@ -1,7 +1,7 @@
-import p1Pic from "../assets/portfolio-screenshots/bolus.png"
+//import p1Pic from "../assets/portfolio-screenshots/bolus.png"
 function Project(props) {
     const projects = {
-        project1: {
+        /* project1: {
             title: "Blood Sugar App",
             image: p1Pic,
             description: `An application aimed to assist type-1 diabetics in controlling their blood sugar. The app can
@@ -11,7 +11,7 @@ function Project(props) {
             githubLink: "https://github.com/ryans93/Blood-Sugar-App",
             deployedLink: "https://ryans93.github.io/Blood-Sugar-App/",
             techs: ["HTML5", "Bootstrap", "jQuery", "Firebase Realtime Database"]
-        }
+        } */
     }
 
     const content = projects[props.project]

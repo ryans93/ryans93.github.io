@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Project from "./Project"
-import p1Pic from "../assets/portfolio-screenshots/bolus.png"
+//import p1Pic from "../assets/portfolio-screenshots/bolus.png"
 import comingSoonPic from "../assets/portfolio-screenshots/Image-Coming-Soon.png"
 
 function Portfolio() {
@@ -11,9 +11,13 @@ function Portfolio() {
         if (content === "portfolio") {
             return (
                 <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-8 p-4">
-                    <div className="relative h-[45vh] hover:cursor-pointer hover:scale-105 transition-transform duration-200 rounded border-black border-4 hover:border-6">
+                    {/* <div className="relative h-[45vh] hover:cursor-pointer hover:scale-105 transition-transform duration-200 rounded border-black border-4 hover:border-6">
                         <img src={p1Pic} onClick={() => setContent("project1")} className="w-full h-full object-contain"></img>
-                        <h2 className="text-xl font-bold bg-gray-900/90 absolute bottom-[12vh] h-[5vh] left-0 w-full flex items-center justify-center">Blood Sugar App</h2>
+                       <h2 className="text-xl font-bold bg-gray-900/90 absolute bottom-[12vh] h-[5vh] left-0 w-full flex items-center justify-center">Blood Sugar App</h2>
+                    </div> */}
+                    <div className="relative h-[45vh] hover:cursor-pointer hover:scale-105 transition-transform duration-200 rounded border-black border-4 hover:border-6">
+                        <img src={comingSoonPic} onClick={() => setContent("project1")} className="w-full object-contain h-full"></img>
+                        <h2 className="text-xl font-bold bg-gray-900/90 absolute bottom-[12vh] h-[5vh] left-0 w-full flex items-center justify-center">Coming soon...</h2>
                     </div>
                     <div className="relative h-[45vh] hover:cursor-pointer hover:scale-105 transition-transform duration-200 rounded border-black border-4 hover:border-6">
                         <img src={comingSoonPic} onClick={() => setContent("project2")} className="w-full object-contain h-full"></img>
@@ -30,14 +34,14 @@ function Portfolio() {
                 </div>
             )
         }
-        if (content === "project1") {
-            return <Project project={content}/>
-        }
-        else {
+        //if (content === "project1") {
+            //return <Project project={content}/>
+        //}
+        //else {
             return (
                 <p>Coming soon...</p>
             )
-        }
+       //}
     }
 
     return (

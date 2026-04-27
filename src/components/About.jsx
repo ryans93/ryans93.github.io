@@ -9,82 +9,96 @@ function About() {
         if (content === "bio") {
             return (
                 <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a fullstack web developer with a background in computer science.
-                    My coding journey began in 2014 at Valencia College where I learned coding fundamentals in C and Java.
-                    After obtaining my A.A. in Computer Science, I transferred to the University of Central Florida where I enrolled
-                    in their 6-month Fullstack Web Developement course offered through 2U. During this course, I learned many important skills 
-                    pertaining to modern web development, including HTML/CSS, javascript, React, nodeJS, and several databases.
-                    Upon completion of the course in 2017, I was able to devlop full-stack web applications using MERN stack. I worked
-                    as a teaching assistant and tutor with 2U for over 7 years, mentoring and assisting students with building MERN stack applications.
-                    <br></br><br></br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using these new skills, I was hired as an intern at Lockheed Marting through UCF's
-                    College Work Experience program. I was tasked managing a scheduling application for the Optics Department. During my internship
-                    I learned new skills including C#, .NET, and Jira as well as gaining valuable experience working as part of a team.
-                    As a methodical and innovative problem solver, I enjoy the challenge of solving complex problems, and using my knowledge
-                     to design applications that solve real-world issues. I am always eager to learn new things, and look forward to 
-                     further developing my skills as part of a team.
+                    &emsp;I have a background in software development and spent the last several years working
+                    as a teaching assistant in a full-stack web development program, where I helped students 
+                    build and debug applications across the frontend, backend, and database layers.<br/><br/>
+                    &emsp;A big part of that role was diagnosing issues, identifying root causes, and helping people 
+                    fix bugs, so I developed a really strong foundation in troubleshooting and understanding 
+                    how systems behave under different conditions.<br/><br/>
+                    &emsp;Before that, I worked as a software engineering intern at Lockheed Martin, where I 
+                    contributed to a production scheduling application and gained experience working in a 
+                    more structured engineering environment.<br/><br/>
+                    &emsp;More recently, I took some time away to handle full-time caregiving responsibilities for 
+                    a family member, and now that things have stabilized, I’m looking to get back into the 
+                    industry.<br/><br/>
+                    &emsp;Right now, I’m focusing on QA and software testing roles because they align really well 
+                    with my strengths in debugging and system analysis, but longer term I’m interested in 
+                    continuing to grow in technical roles where I can deepen my understanding of systems 
+                    and contribute more broadly.
                 </p>
             )
         }
 
-        if (content === "skills"){
+        if (content === "skills") {
             return (
-                <div className="flex flex-col md:flex-row w-[100%] md:justify-around">
-                    <div className="basis-3/10 grow-0 items-center">
-                        <h2 className="text-xl font-bold mb-[1rem] border-white border-b-2">Front End:</h2>
+                <div className="flex flex-col xl:flex-row w-[100%] xl:justify-around">
+                    <div className="basis-2/10 grow-0 items-center">
+                        <h2 className="text-xl font-bold mb-[1rem] border-white border-b-2">Testing & Debugging:</h2>
                         <ul className="list-disc list-inside">
-                            <li>HTML</li>
-                            <li>CSS/Responsive Design</li>
-                            <li>Bootstrap</li>
-                            <li>Tailwind</li>
-                            <li>Javascript</li>
-                            <li>jQuery</li>
-                            <li>React</li>
-                            <li>Firebase Realtime Database</li>
-
+                            <li>Manual Testing</li>
+                            <li>Debugging</li>
+                            <li>Troubleshooting</li>
+                            <li>Test Case Validation</li>
+                            <li>Defect Identification</li>
                         </ul>
                     </div>
-                    <div className="basis-3/10 grow-0 items-center mt-[1rem] md:mt-0">
-                        <h2 className="text-xl font-bold mb-[1rem] border-white border-b-2">Back End:</h2>
+                    <div className="basis-2/10 grow-0 items-center mt-[1rem] xl:mt-0">
+                        <h2 className="text-xl font-bold mb-[1rem] border-white border-b-2">Languages:</h2>
                         <ul className="list-disc list-inside">
-                            <li>NodeJS</li>
+                            <li>Javascript(ES6)</li>
                             <li>Typescript</li>
-                            <li>ExpressJS</li>
-                            <li>SQL (mySQL, postgreSQL)</li>
-                            <li>Sequelize</li>
-                            <li>MongoDB & Mongoose</li>
-                            <li>GraphQL</li>
                             <li>Python</li>
+                            <li>HTML5</li>
+                            <li>CSS</li>
                         </ul>
                     </div>
-                    <div className="basis-3/10 grow-0 items-center mt-[1rem] md:mt-0">
-                        <h2 className="text-xl font-bold mb-[1rem] border-white border-b-2">Other:</h2>
+                    <div className="basis-2/10 grow-0 items-center mt-[1rem] xl:mt-0">
+                        <h2 className="text-xl font-bold mb-[1rem] border-white border-b-2">Frameworks and Tools:</h2>
                         <ul className="list-disc list-inside">
-                            <li>GIT</li>
-                            <li>MVC design</li>
-                            <li>OOP</li>
-                            <li>Restful API's/AJAX</li>
-                            <li>Computer Science Fundamentals</li>
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Restful API's</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                    <div className="basis-2/10 grow-0 items-center mt-[1rem] xl:mt-0">
+                        <h2 className="text-xl font-bold mb-[1rem] border-white border-b-2">Databases:</h2>
+                        <ul className="list-disc list-inside">
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                    <div className="basis-2/10 grow-0 items-center mt-[1rem] xl:mt-0">
+                        <h2 className="text-xl font-bold mb-[1rem] border-white border-b-2">Concepts:</h2>
+                        <ul className="list-disc list-inside">
+                            <li>Agile/Scrum</li>
+                            <li>MVC Architecture</li>
+                            <li>API Integration</li>
+                            <li>Tailwind</li>
+                            <li>Object-Oriented Programming</li>
                         </ul>
                     </div>
                 </div>
-                
+
             )
         }
 
-        if (content === "awards"){
+        if (content === "awards") {
             return (
                 <ul className="list-disc pl-[2rem]">
                     <li className="pb-[1rem]">UCF Coding Boot Camp - Full Stack Web Developement Program Certificate (October 2017)</li>
-                    <li className="pb-[1rem]">Valencia College - A.A. in Computer Science (April 2017)</li>
+                    <li className="pb-[1rem]">Valencia College - A.A. of Computer Science (April 2017)</li>
                     <li>Phi Theta Kappa Honor Society (October 2015)</li>
                 </ul>
             )
         }
 
-        if (content === "resume"){
+        if (content === "resume") {
             return (
-            <embed src={resume} type="application/pdf" width="100%" className="h-[calc(98vh-4rem)]" />
+                <embed src={resume} type="application/pdf" width="100%" className="h-[calc(98vh-4rem)]" />
             )
         }
     }
