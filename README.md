@@ -1,6 +1,9 @@
 # Ryan Strickler
 
-![Profile Picture](./assets/images/Ryan.Strickler_7410_square.jpg)
+<picture>
+    <img src="./src/assets/images/Ryan.Strickler_7410_square.jpg" alt="Professional Headshot" 
+    style="height: 300px;">
+</picture>
 
 ## Contact Information
 
