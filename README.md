@@ -52,7 +52,3 @@ Phone: (352) 459-5396
 *University of Central Florida - Orlando, FL*
 - Completed intensive 24-week MERN stack program
 - Technologies: JavaScript, React, Node.js, SQL, MongoDB
-
-## Projects
-
-#### Coming soon...
