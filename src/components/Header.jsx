@@ -15,8 +15,8 @@ function Header() {
                     <a className="text-xl font-bold " href="tel:+13524595396">Phone: (352) 459-5396</a>
                 </h5>
                 <div id="imageContainer" className="flex flex-row justify-center">
-                    <a href="https://www.linkedin.com/in/ryan-strickler/" target="__blank"><img src={gitIcon} alt="Github Icon" className="px-[1rem]"/></a>
-                    <a href="https://github.com/ryans93" target="__blank"><img src={lnIcon} alt="LinkedIn Icon" /></a>
+                    <a href="https://www.linkedin.com/in/ryan-strickler/" target="__blank"><img src={lnIcon} alt="LinkedIn Icon" className="px-[1rem]"/></a>
+                    <a href="https://github.com/ryans93" target="__blank"><img src={gitIcon} alt="GitHub Icon" /></a>
                 </div>
             </div>
         </section>
